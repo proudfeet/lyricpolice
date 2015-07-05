@@ -73,6 +73,6 @@ body {
 			border: 3px solid #2ecc71;
 			color: #eee;
 			border-radius: 2px;
-			text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 1px 1px 0px white;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		}
 
