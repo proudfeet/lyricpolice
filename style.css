@@ -12,16 +12,67 @@ ul {
 	list-style-type: none;
 }
 
+body {
+	background: black url("https://download.unsplash.com/photo-1429091967365-492aaa5accfe") no-repeat;
+	background-size: cover;
+}
+
 .wrapper {
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
+	padding: 0 15px;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-.main__lyriclist li:not(:last-child) {
-	border-bottom: 1px solid black;
-}
+	.main__headline {
+		text-align: center;
+	}
 
-.main__lyriclist li:nth-child(2n) {
-	background: #eee;
-}
+		.main__lyriclist {
+			background: rgba(255, 255, 255, 0.6);
+		}
+
+			.main__lyriclist li {
+				padding: 10px;
+			}
+
+				.main__lyriclist li:not(:last-child) {
+					border-bottom: 1px solid #dfdfdf;
+				}
+
+				.main__lyriclist li:nth-child(2n) {
+					background: rgba(255, 255, 255, 0.3);
+				}
+
+	.form {
+		margin-bottom: 100px;
+	}
+		.input-box {
+			margin-top: 15px;
+		}
+
+		label,
+		.form__lyric,
+		.form__submit {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			font-size: 18px;
+		}
+
+		label {
+			text-transform: uppercase;
+			font-size: 16px;
+			letter-spacing: -1px;
+		}
+
+		.form__submit {
+			background: #27ae60;
+			border: 3px solid #2ecc71;
+			color: #eee;
+			border-radius: 2px;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 1px 1px 0px white;
+		}
+
