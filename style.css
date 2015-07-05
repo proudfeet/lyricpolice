@@ -11,3 +11,17 @@ ul {
 	padding: 0;
 	list-style-type: none;
 }
+
+.wrapper {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.main__lyriclist li:not(:last-child) {
+	border-bottom: 1px solid black;
+}
+
+.main__lyriclist li:nth-child(2n) {
+	background: #eee;
+}
