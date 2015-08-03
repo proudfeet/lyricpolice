@@ -14,14 +14,15 @@ ul {
 
 body {
 	background: black url("https://download.unsplash.com/photo-1429091967365-492aaa5accfe") no-repeat;
-	background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 .wrapper {
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 15px 100px;
 	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
 }
@@ -31,11 +32,13 @@ body {
 	}
 
 		.main__lyriclist {
-			background: rgba(255, 255, 255, 0.6);
+			padding-top: 50px;
+			border-top: 1px solid rgba(0, 0, 0, 0.1);
 		}
 
 			.main__lyriclist li {
 				padding: 10px;
+				background: rgba(255, 255, 255, 0.6);
 			}
 
 				.main__lyriclist li:not(:last-child) {
@@ -47,7 +50,7 @@ body {
 				}
 
 	.form {
-		margin-bottom: 100px;
+		margin-bottom: 50px;
 	}
 		.input-box {
 			margin-top: 15px;
@@ -69,10 +72,9 @@ body {
 		}
 
 		.form__submit {
-			background: #27ae60;
-			border: 3px solid #2ecc71;
+			background: #2980b9;
+			border: 3px solid rgba(0, 0, 0, 0.2);
 			color: #eee;
-			border-radius: 2px;
 			text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		}
 

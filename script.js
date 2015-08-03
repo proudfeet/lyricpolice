@@ -21,9 +21,13 @@ document.addEventListener("DOMContentLoaded", function(){
 	document.getElementById("lyric-submission-form").addEventListener("submit", function(ev){
 		ev.preventDefault();
 		var submittedLyric = document.getElementById("offending-lyric").value;
-		var newLyric = lyrics.push({
-			lyric: submittedLyric
-		});
+		if(submittedLyric.length > 0) {
+			var newLyric = lyrics.push({
+				lyric: submittedLyric
+			});
+		} else {
+			alert("Sorry friend, we have to make sure you actually submit something.");
+		}
 		document.getElementById("lyric-submission-form").reset();
 	});
 });
