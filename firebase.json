@@ -1,0 +1,9 @@
+{
+  "firebase": "lyric-police",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
